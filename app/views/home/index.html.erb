@@ -1,2 +1,5 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<% %w{ ffcc00 ccff00 00ccff ff6600 cc6666 ff0066 006666 0099cc 666600 cc00cc }.each do |hex| %>
+  <div style="background: #<%= hex %>; color: <%= contrast_color(hex) %>; display: inline-block; padding: 30px; margin-right: 4px;">
+    <strong>Test</strong>
+  </div>
+<% end %>
